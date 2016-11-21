@@ -1,0 +1,1 @@
+c:\users\george\documents\visual studio 2015\Projects\AzureMLTutorial\AzureMLTutorial\AzureMLTutorial.csproj;x86

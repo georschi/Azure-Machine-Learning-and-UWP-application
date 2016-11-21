@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="AzureMLTutorial.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AzureMLTutorial"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="myGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" Grid.Column="1" Text="I can predict if you are a democrat or a republican. Try me!" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Do you agree with the abortion of handicapped infants?" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Do you agree with water project cost sharing?" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Do you agree with the adoption of the budget resolution?" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="4" Text="Do you agree with the physician fee freeze?" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="Do you agree with the El-Salvador aid?" TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="6" Text="Do you agree with the religious groups in schools?" TextWrapping="Wrap"/>
+        
+        <ToggleSwitch Grid.Column="2" Grid.Row="1" OffContent="NO" OnContent="YES" HorizontalAlignment="Right" VerticalAlignment="Center" />
+        <ToggleSwitch Grid.Column="2" Grid.Row="2" OffContent="NO" OnContent="YES" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <ToggleSwitch Grid.Column="2" Grid.Row="3" OffContent="NO" OnContent="YES" HorizontalAlignment="Right" VerticalAlignment="Center" />
+        <ToggleSwitch Grid.Column="2" Grid.Row="4" OffContent="NO" OnContent="YES" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <ToggleSwitch Grid.Column="2" Grid.Row="5" OffContent="NO" OnContent="YES" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <ToggleSwitch Grid.Column="2" Grid.Row="6" OffContent="NO" OnContent="YES" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Button Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="7" HorizontalAlignment="Center" Content="Submit" Click="Button_Click"  />
+    </Grid>
+</Page>
